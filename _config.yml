@@ -1,56 +1,377 @@
+# ==============================
+# Basic Site Settings
+# ==============================
+
+locale: "en-US"
+site_theme: "default"
+title: "Shenghao Ji | Academic Website"
+title_separator: "-"
+name: &name "Shenghao Ji"
+description: &description "Personal academic website of Shenghao Ji. Research in anammox, biological nitrogen removal, microbial ecology, and N2O mitigation."
+
+url: "https://xiaoyuzhaohy-source.github.io"
+baseurl: "/xiaoyupackage.github.io"
+repository: "xiaoyuzhaohy-source/xiaoyupackage.github.io"
+
+# ==============================
+# Author Profile
+# ==============================
 
 author:
-  avatar           :
-  name             : "Shenghao Ji"
-  pronouns         :
-  bio              : "Postdoctoral Fellow at The Hong Kong Polytechnic University | Anammox, Nitrogen Cycling & N₂O Mitigation"
-  location         : "Hong Kong SAR, China"
-  employer         : "The Hong Kong Polytechnic University"
-  uri              :
-  email            : "shenghao.ji@polyu.edu.hk"
+  avatar: "profile.png"
+  name: "Shenghao Ji"
+  pronouns:
+  bio: "Postdoctoral Fellow at The Hong Kong Polytechnic University | Anammox, Nitrogen Cycling & N₂O Mitigation"
+  location: "Hong Kong SAR, China"
+  employer: "The Hong Kong Polytechnic University"
+  uri:
+  email: "shenghao.ji@polyu.edu.hk"
 
-  academia         :
-  arxiv            :
-  googlescholar    :
-  inspire-hep      :
-  impactstory      :
-  orcid            :
-  semantic         :
-  ssrn             :
-  pubmed           :
-  researchgate     : "https://www.researchgate.net/profile/Shenghao-Ji/research"
-  scopus           :
-  zotero           :
+  # Academic Profiles
+  academia:
+  arxiv:
+  googlescholar:
+  inspire-hep:
+  impactstory:
+  orcid:
+  semantic:
+  ssrn:
+  pubmed:
+  researchgate: "https://www.researchgate.net/profile/Shenghao-Ji/research"
+  scopus:
+  zotero:
 
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  github           : "xiaoyuzhaohy-source"
-  kaggle           :
-  stackoverflow    :
+  # Repositories
+  bitbucket:
+  codepen:
+  dribbble:
+  github: "xiaoyuzhaohy-source"
+  kaggle:
+  stackoverflow:
 
-  artstation       :
-  bluesky          :
-  facebook         :
-  flickr           :
-  foursquare       :
-  goodreads        :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  mastodon         :
-  medium           :
-  pinterest        :
-  soundcloud       :
-  steam            :
-  telegram         :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  wikipedia        :
-  xing             :
-  youtube          :
-  zhihu            :
+  # Social Media
+  artstation:
+  bluesky:
+  facebook:
+  flickr:
+  foursquare:
+  goodreads:
+  google_plus:
+  keybase:
+  instagram:
+  lastfm:
+  linkedin:
+  mastodon:
+  medium:
+  pinterest:
+  soundcloud:
+  steam:
+  telegram:
+  tumblr:
+  twitter:
+  vine:
+  weibo:
+  wikipedia:
+  xing:
+  youtube:
+  zhihu:
+
+# ==============================
+# Publication Categories
+# ==============================
+
+publication_category:
+  books:
+    title: "Books"
+  manuscripts:
+    title: "Journal Articles"
+  conferences:
+    title: "Conference Papers"
+
+# ==============================
+# Site Settings
+# ==============================
+
+teaser:
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
+
+comments:
+  provider:
+  disqus:
+    shortname:
+  discourse:
+    server:
+  facebook:
+    appid:
+    num_posts:
+    colorscheme:
+
+staticman:
+  allowedFields: ['name', 'email', 'url', 'message']
+  branch: "gh-pages"
+  commitMessage: "New comment."
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
+  transforms:
+    email: "md5"
+  generatedFields:
+    date:
+      type: "date"
+      options:
+        format: "iso8601"
+
+atom_feed:
+  hide: false
+  path:
+
+# ==============================
+# SEO Settings
+# ==============================
+
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
+
+# ==============================
+# Social Sharing
+# ==============================
+
+twitter:
+  username: &twitter
+
+facebook:
+  username:
+  app_id:
+  publisher:
+
+og_image: og-image.png
+og_description:
+
+social:
+  type:
+  name:
+  links:
+
+# ==============================
+# Analytics
+# ==============================
+
+analytics:
+  provider: "false"
+  google:
+    tracking_id:
+
+# ==============================
+# Reading Files
+# ==============================
+
+include:
+  - .htaccess
+  - _pages
+  - files
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+
+keep_files:
+  - .git
+  - .svn
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# ==============================
+# Markdown Conversion
+# ==============================
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  header_links: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# ==============================
+# Jekyll Collections
+# ==============================
+
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+# ==============================
+# Default Page Layouts
+# ==============================
+
+defaults:
+  # Posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
+  # Pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+  # Teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+  # Publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+
+  # Portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+
+  # Talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+# ==============================
+# Sass / CSS
+# ==============================
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# ==============================
+# URL & Timezone
+# ==============================
+
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+# ==============================
+# Jekyll Plugins
+# ==============================
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# ==============================
+# Archives
+# ==============================
+
+category_archive:
+  type: liquid
+  path: /categories/
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# ==============================
+# HTML Compression
+# ==============================
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: development
