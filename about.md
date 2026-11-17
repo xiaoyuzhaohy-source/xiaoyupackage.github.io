@@ -7,26 +7,70 @@ redirect_from:
   - /about.html
 ---
 
-# Shenghao Ji (季聖豪)
+# Shenghao Ji
 
-**Environmental Engineering Researcher**
+**Postdoctoral Fellow**  
+Department of Civil and Environmental Engineering  
+The Hong Kong Polytechnic University  
+Hong Kong SAR, China
 
-My research focuses on resource-efficient biological wastewater treatment, with particular interests in **anaerobic ammonium oxidation (anammox)**, **partial nitritation**, **partial denitrification**, **nitrous oxide (N₂O) mitigation**, and resource recovery from nutrient-rich wastewater.
+## About Me
 
-My work investigates integrated nitrogen removal systems, granular sludge processes, and the interactions between microbial communities and reactor operating conditions.
+I am a Postdoctoral Fellow in the Department of Civil and Environmental Engineering at The Hong Kong Polytechnic University. I received my Ph.D. from Tohoku University, Japan, under the supervision of Prof. Yu-You Li, and my master's degree from Shanghai University, China.
 
-## Research Highlights
+My research focuses on sustainable biological wastewater treatment, with particular emphasis on **anaerobic ammonium oxidation (anammox)**, **partial nitritation/anammox (PN/A)**, **partial denitrification/anammox (PD/A)**, and **nitrous oxide (N₂O) mitigation**.
 
-- **Integrated nitrogen removal:** Combining partial nitritation, anammox, and partial denitrification to improve nitrogen removal from high-strength wastewater.
-- **Granular sludge processes:** Studying hydroxyapatite-associated (HAP) granules and EGSB reactors.
-- **Greenhouse-gas mitigation:** Understanding N₂O generation and consumption in biological treatment processes.
+I am particularly interested in understanding the interactions among reactor operating conditions, nitrogen transformation pathways, and microbial communities. My research integrates reactor engineering, process optimization, and microbial ecology to develop efficient and low-carbon biological nitrogen removal technologies.
 
-## Current Affiliation
+## Research Interests
 
-*Update institution, department, position, and dates before making this website public.*
+- **Anammox-based wastewater treatment:** Development and optimization of anammox-based processes for efficient nitrogen removal.
+- **Partial nitritation/anammox (PN/A):** Process control and operational strategies for stable nitrogen removal.
+- **Partial denitrification/anammox (PD/A):** Integration of heterotrophic and autotrophic nitrogen removal pathways.
+- **Nitrous oxide mitigation:** Mechanisms of N₂O production, consumption, and emissions in biological wastewater treatment systems.
+- **Microbial ecology and nitrogen cycling:** Characterization of nitrogen-cycling microorganisms and their functional contributions.
 
-## Selected Publication
+[Explore My Research]({{ '/research/' | relative_url }})
 
-- **Optimization of up-flow velocity enhances performance of PDA in EGSB with HAP** — *Chemical Engineering Journal* (accepted August 2025). **Please verify and add the final citation and DOI.**
+## Academic Background
 
-[Explore my research](/research/) · [View publications](/publications/) · [Curriculum vitae](/cv/)
+**October 2026 – Present**  
+Postdoctoral Fellow  
+The Hong Kong Polytechnic University, Hong Kong SAR, China
+
+**October 2023 – September 2026**  
+Ph.D., Tohoku University, Japan  
+Supervisor: Prof. Yu-You Li
+
+**September 2020 – June 2023**  
+Master's Degree, Shanghai University, China
+
+## Selected Publications
+
+**1. Nitrous oxide emissions during partial nitritation**
+
+**Ji, S.**, Cui, S., Zhao, H., et al. (2026). The Mechanism of Aggravating N₂O Emission in a Partial Nitritation Reactor with Increasing bCOD/NH₄⁺–N. *Environmental Science & Technology*.
+
+[DOI](https://doi.org/10.1021/acs.est.5c18188)
+
+**2. Hydroxyapatite-strengthened anammox and PD/A**
+
+**Ji, S.**, Zhao, H., Cui, S., et al. (2026). A novel two-layered hydroxyapatite-strengthened anammox-partial denitrification/anammox reactor for advanced nitrogen removal: Performance and mechanisms. *Water Research*.
+
+[DOI](https://doi.org/10.1016/j.watres.2026.126431)
+
+**3. Optimization of granular sludge reactor operation**
+
+**Ji, S.**, Cui, S., Zhao, H., et al. (2025). Optimization of up-flow velocity enhances the performance of partial denitrification/anammox process in expanded granular sludge bed reactor based on the formation of hydroxyapatite. *Chemical Engineering Journal*.
+
+[DOI](https://doi.org/10.1016/j.cej.2025.166927)
+
+[View All Publications]({{ '/publications/' | relative_url }})
+
+## Academic Collaboration
+
+I welcome opportunities for academic collaboration in biological wastewater treatment, nitrogen cycling, and greenhouse-gas mitigation.
+
+**Email:** [shenghao.ji@polyu.edu.hk](mailto:shenghao.ji@polyu.edu.hk)
+
+[Research]({{ '/research/' | relative_url }}) · [Publications]({{ '/publications/' | relative_url }}) · [Curriculum Vitae]({{ '/cv/' | relative_url }}) · [Contact]({{ '/contact/' | relative_url }})
