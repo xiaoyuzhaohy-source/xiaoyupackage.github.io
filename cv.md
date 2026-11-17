@@ -5,28 +5,85 @@ permalink: /cv/
 author_profile: true
 ---
 
+# Shenghao Ji
+
+**Postdoctoral Fellow**  
+Department of Civil and Environmental Engineering  
+The Hong Kong Polytechnic University  
+Hong Kong SAR, China
+
+**Email:** [shenghao.ji@polyu.edu.hk](mailto:shenghao.ji@polyu.edu.hk)
+
+---
+
+## Academic Appointments
+
+**October 2026 – Present**
+
+**Postdoctoral Fellow**  
+Department of Civil and Environmental Engineering  
+The Hong Kong Polytechnic University  
+Hong Kong SAR, China
+
 ## Education
 
-- **Ph.D. research — Environmental Engineering**, Tohoku University, Japan. *Confirm degree award status and exact dates.*
-- **Previous education:** Add verified degree names, institutions, and graduation dates.
+**October 2023 – September 2026**
 
-## Research Experience
+**Doctor of Philosophy (Ph.D.)**  
+Tohoku University, Japan  
+Supervisor: Prof. Yu-You Li
 
-- Research on biological nitrogen removal, anammox-based processes, and N₂O mitigation.
-- Research on nutrient recovery and microalgal biotechnology.
+**September 2020 – June 2023**
 
-## Selected Publications
+**Master's Degree**  
+Shanghai University, China
 
-[View publications](/publications/).
+## Research Interests
 
-## Awards and Honors
+- Anaerobic ammonium oxidation (anammox)
+- Partial nitritation/anammox (PN/A)
+- Partial denitrification/anammox (PD/A)
+- Biological nitrogen removal
+- Nitrous oxide (N₂O) mitigation
+- Microbial ecology and nitrogen cycling
+- Sustainable wastewater treatment
 
-*Add verified awards, granting organizations, and award years.*
+## Research Expertise
 
-## Download
+### Biological Wastewater Treatment
 
-Upload a file named `CV.pdf` to the repository's `files/` directory. Then enable this link:
+- Anammox-based treatment processes
+- Partial nitritation and partial denitrification
+- Expanded granular sludge bed (EGSB) reactors
+- Hydroxyapatite-associated granular sludge
+- Reactor operation and process optimization
+- Nitrogen removal performance evaluation
 
-<!-- [Download my CV (PDF)](/files/CV.pdf) -->
+### Environmental Microbiology
 
-*PDF CV will be available after upload.*
+- Microbial community analysis
+- Nitrogen-cycling functional microorganisms
+- Functional gene characterization
+- Microbial nitrogen transformation pathways
+
+
+## Publications
+
+My publications focus on anammox-based nitrogen removal, biological wastewater treatment, reactor engineering, and greenhouse-gas mitigation.
+
+For a complete and updated publication list, please visit:
+
+[Full List of Publications]({{ '/publications/' | relative_url }})
+
+## Academic Profiles
+
+- [ResearchGate](https://www.researchgate.net/profile/Shenghao-Ji/research)
+- [GitHub](https://github.com/xiaoyuzhaohy-source)
+
+## Contact
+
+Department of Civil and Environmental Engineering  
+The Hong Kong Polytechnic University  
+Hong Kong SAR, China
+
+Email: [shenghao.ji@polyu.edu.hk](mailto:shenghao.ji@polyu.edu.hk)
