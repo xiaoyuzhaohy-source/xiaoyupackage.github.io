@@ -10,8 +10,8 @@ name: &name "Shenghao Ji"
 description: &description "Personal academic website of Shenghao Ji. Research in anammox, biological nitrogen removal, microbial ecology, and N2O mitigation."
 
 url: "https://xiaoyuzhaohy-source.github.io"
-baseurl: "/xiaoyupackage.github.io"
-repository: "xiaoyuzhaohy-source/xiaoyupackage.github.io"
+baseurl: ""
+repository: "xiaoyuzhaohy-source/xiaoyuzhaohy-source.github.io"
 
 # ==============================
 # Author Profile
