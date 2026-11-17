@@ -5,32 +5,103 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
+{% assign all_papers = site.publications | sort: "author_position" %}
+{% assign all_papers = all_papers | sort: "year" | reverse %}
+
+{% assign years = all_papers | map: "year" | uniq | sort | reverse %}
+
+<style>
+.pub-year {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.pub-item {
+  margin: 1.4rem 0;
+}
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.pub-authors {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+}
+.pub-venue {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.pub-tags {
+  margin-top: 0.5rem;
+}
+.pub-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 3px 4px 3px 0;
+  background: #f0f3f6;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+.first-author {
+  color: #1769aa;
+  font-weight: 700;
+}
+</style>
+
+{% for year in years %}
+
+<h2 class="pub-year">{{ year }}</h2>
+
+{% assign year_papers = all_papers | where: "year", year | sort: "author_position" %}
+
+{% for paper in year_papers %}
+
+<div class="pub-item">
+
+  <div class="pub-title">
+    {{ paper.title }}
+  </div>
+
+  <div class="pub-authors">
+    {% if paper.authors %}
+      {% for author in paper.authors %}
+        {% if author == "Shenghao Ji" %}
+          <strong class="first-author">{{ author }}</strong>
+        {% else %}
+          {{ author }}
+        {% endif %}
+        {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    {% else %}
+      {{ paper.citation }}
+    {% endif %}
+  </div>
+
+  <div class="pub-venue">
+    {{ paper.venue }} ({{ paper.year }})
+    {% if paper.first_author %}
+      <strong> · First Author</strong>
+    {% endif %}
+  </div>
+
+  {% if paper.tags %}
+  <div class="pub-tags">
+    {% for tag in paper.tags %}
+      <span class="pub-tag">{{ tag }}</span>
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  </div>
+  {% endif %}
 
+  {% if paper.paperurl %}
+    <a href="{{ paper.paperurl }}" target="_blank" rel="noopener noreferrer">
+      DOI / Paper
+    </a>
+  {% endif %}
 
+</div>
 
+{% endfor %}
+{% endfor %}
