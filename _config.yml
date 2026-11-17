@@ -3,7 +3,7 @@
 # ==============================
 
 locale: "en-US"
-site_theme: "default"
+site_theme: "mint"
 title: "Shenghao Ji | Academic Website"
 title_separator: "-"
 name: &name "Shenghao Ji"
