@@ -52,38 +52,58 @@ body {
   box-shadow: 0 3px 14px rgba(16, 57, 57, 0.12);
 }
 
-.masthead__inner-wrap,
-.greedy-nav {
-  background: transparent;
+.masthead__inner-wrap {
+  background: transparent !important;
 }
 
+.greedy-nav {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.greedy-nav .visible-links,
+.greedy-nav .visible-links li,
+.greedy-nav .hidden-links,
+.greedy-nav .navicon,
+.masthead__menu,
+.masthead__menu ul {
+  background: transparent !important;
+}
+
+.greedy-nav .site-title,
 .greedy-nav a,
 .greedy-nav .visible-links a,
-.greedy-nav .site-title {
-  color: #ffffff;
+.masthead__menu-item a {
+  color: #f7fbfa !important;
   font-weight: 600;
 }
 
+.greedy-nav .site-title:hover,
 .greedy-nav a:hover,
-.greedy-nav .visible-links a:hover {
-  color: #bce5d7;
+.greedy-nav .visible-links a:hover,
+.masthead__menu-item a:hover {
+  color: #bce5d7 !important;
 }
 
-.greedy-nav .visible-links a:before {
-  background: #8bcabc;
+.greedy-nav .visible-links a:before,
+.masthead__menu-item a:before {
+  background: #8bcabc !important;
 }
 
 .greedy-nav button {
-  background-color: #286b68;
+  background: #286b68 !important;
+  color: #ffffff !important;
+  border: none !important;
 }
 
 .greedy-nav .hidden-links {
-  background: #ffffff;
-  border: 1px solid #d6e6e2;
+  background: #ffffff !important;
+  border: 1px solid #d6e6e2 !important;
 }
 
 .greedy-nav .hidden-links a {
-  color: #173f46;
+  color: #173f46 !important;
 }
 
 /* 04 — Main page panel */
