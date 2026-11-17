@@ -1,0 +1,312 @@
+/* ========================================
+   SHENGHAO JI — ACADEMIC WEBSITE
+   Deep Teal Academic Theme
+   ======================================== */
+
+/* 01 — Global colour palette */
+
+:root {
+  --global-base-color: #173f46;
+  --global-bg-color: #f4f9f8;
+  --global-footer-bg-color: #173f46;
+  --global-border-color: #d6e6e2;
+  --global-dark-border-color: #b8d2cb;
+  --global-code-background-color: #edf5f2;
+  --global-code-text-color: #234d4c;
+  --global-fig-caption-color: #59736e;
+  --global-link-color: #236f69;
+  --global-link-color-hover: #124d49;
+  --global-link-color-visited: #426e69;
+  --global-masthead-link-color: #ffffff;
+  --global-masthead-link-color-hover: #bce5d7;
+  --global-text-color: #304d4a;
+  --global-text-color-light: #637e78;
+  --global-thead-color: #e5f0ed;
+}
+
+/* 02 — Molecular network background */
+
+html {
+  background-color: #f4f9f8;
+}
+
+body {
+  background-color: #f4f9f8;
+  background-image:
+    linear-gradient(
+      rgba(244, 249, 248, 0.88),
+      rgba(244, 249, 248, 0.88)
+    ),
+    url("../../images/molecular-network.svg");
+  background-position: center, center top;
+  background-repeat: repeat, repeat;
+  background-size: auto, 720px 480px;
+  color: #304d4a;
+}
+
+/* 03 — Navigation bar */
+
+.masthead {
+  background: #173f46;
+  border-bottom: 3px solid #61a69a;
+  box-shadow: 0 3px 14px rgba(16, 57, 57, 0.12);
+}
+
+.masthead__inner-wrap,
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav .site-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  color: #bce5d7;
+}
+
+.greedy-nav .visible-links a:before {
+  background: #8bcabc;
+}
+
+.greedy-nav button {
+  background-color: #286b68;
+}
+
+.greedy-nav .hidden-links {
+  background: #ffffff;
+  border: 1px solid #d6e6e2;
+}
+
+.greedy-nav .hidden-links a {
+  color: #173f46;
+}
+
+/* 04 — Main page panel */
+
+#main {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e2eeea;
+  border-radius: 14px;
+  box-shadow: 0 10px 32px rgba(20, 65, 60, 0.055);
+  padding: 24px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+/* 05 — Sidebar and avatar */
+
+.sidebar {
+  color: #304d4a;
+}
+
+.author__avatar img {
+  border: 4px solid #d7ebe4;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(22, 87, 79, 0.13);
+}
+
+.author__content .author__name,
+.author__name {
+  color: #173f46;
+  font-weight: 700;
+}
+
+.author__bio {
+  color: #526e68;
+  line-height: 1.7;
+}
+
+.author__urls a {
+  color: #286b68;
+}
+
+.author__urls a:hover {
+  color: #124d49;
+}
+
+/* 06 — Typography */
+
+body,
+.page__content,
+.archive {
+  line-height: 1.8;
+}
+
+.page__title {
+  color: #173f46;
+  font-weight: 700;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__subtitle {
+  color: #173f46;
+  font-weight: 700;
+}
+
+.page__content h2 {
+  margin-top: 2.1em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid #d9ebe5;
+}
+
+.page__content h3 {
+  margin-top: 1.5em;
+}
+
+a {
+  color: #236f69;
+}
+
+a:hover {
+  color: #124d49;
+}
+
+::selection {
+  background: #c5e5da;
+  color: #173f46;
+}
+
+/* 07 — Publications */
+
+.pub-year {
+  color: #173f46;
+  border-bottom: 2px solid #76b2a5;
+  padding-bottom: 8px;
+}
+
+.pub-item {
+  background: #ffffff;
+  border: 1px solid #e1ece8;
+  border-left: 3px solid #76b2a5;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin: 18px 0;
+  box-shadow: 0 3px 12px rgba(20, 65, 60, 0.035);
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.pub-item:hover {
+  border-left-color: #236f69;
+  box-shadow: 0 6px 18px rgba(20, 65, 60, 0.08);
+}
+
+.pub-title {
+  color: #173f46;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.pub-authors {
+  color: #526e68;
+  line-height: 1.7;
+}
+
+.pub-venue {
+  color: #446b63;
+}
+
+.first-author {
+  color: #176d65;
+  font-weight: 700;
+}
+
+.pub-tag {
+  background: #e2f1ec;
+  color: #215f5e;
+  border: 1px solid #cce4dc;
+  border-radius: 5px;
+  padding: 3px 9px;
+  font-size: 0.76em;
+  display: inline-block;
+}
+
+.pub-item a {
+  color: #236f69;
+  font-weight: 600;
+}
+
+/* 08 — Buttons and tables */
+
+.btn,
+button.btn {
+  background-color: #236f69;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.btn:hover,
+button.btn:hover {
+  background-color: #173f46;
+  color: #ffffff;
+}
+
+thead {
+  background-color: #e5f0ed;
+}
+
+th {
+  color: #173f46;
+}
+
+blockquote {
+  border-left: 4px solid #80b9ad;
+  background: #f0f7f4;
+  padding: 12px 18px;
+  color: #426a61;
+}
+
+/* 09 — Footer */
+
+.page__footer {
+  background: #173f46;
+  color: #e5f4ef;
+  border-top: 3px solid #61a69a;
+}
+
+.page__footer a,
+.page__footer-follow,
+.page__footer-copyright {
+  color: #e5f4ef;
+}
+
+.page__footer a:hover {
+  color: #bce5d7;
+}
+
+/* 10 — Responsive adjustments */
+
+@media (max-width: 768px) {
+  #main {
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+
+  .pub-item {
+    padding: 14px;
+  }
+
+  .page__content {
+    line-height: 1.7;
+  }
+
+  body {
+    background-size: auto, 540px 360px;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .pub-item {
+    transition: none;
+  }
+}
